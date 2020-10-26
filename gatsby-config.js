@@ -2,6 +2,10 @@ require("dotenv").config();
 
 const sidebarCategories = {
   null: ["index", "intro/ecosystem", "intro/support"],
+  "Liquidity Mining": [
+    "liquidity-mining/overview",
+    "liquidity-mining/current-rewards&terms",
+  ],
   "Miner App": [
     "miner-app/overview",
     "miner-app/markets",
