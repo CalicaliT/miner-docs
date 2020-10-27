@@ -5,6 +5,7 @@ const sidebarCategories = {
   "Liquidity Mining": [
     "liquidity-mining/overview",
     "liquidity-mining/current-rewards&terms",
+    "liquidity-mining/token-issuers",
   ],
   "Miner App": [
     "miner-app/overview",
@@ -14,6 +15,7 @@ const sidebarCategories = {
     "miner-app/performance",
     "miner-app/leaderboard",
     "miner-app/settings",
+    "miner-app/vote",
     "miner-app/hummingbotstatus",
   ],
   FAQ: ["faq/liquidity-mining", "faq/accounts&privacy", "faq/eagle-club"],
