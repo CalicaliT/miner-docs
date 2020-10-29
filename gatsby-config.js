@@ -1,28 +1,26 @@
 require("dotenv").config();
 
 const sidebarCategories = {
-  null: ["index", "intro/ecosystem", "intro/support"],
-  "Liquidity Mining": [
+  null: ["index", "liquidity-mining/current-rewards&terms", "faq/eagle-club"],
+  "About Liquidity Mining": [
     "liquidity-mining/overview",
-    "liquidity-mining/current-rewards&terms",
-    "liquidity-mining/token-issuers",
+    "[Hummingbot Whitepaper](https://hummingbot.io/hummingbot.pdf)",
+    "[Hummingbot YouTube](https://www.youtube.com/c/HummingbotChannel)",
   ],
-  "Miner App": [
+  "Getting Started": [
     "miner-app/overview",
     "miner-app/markets",
+    "miner-app/leaderboard",
+  ],
+  "Rewards,Payouts & Performance": [
     "miner-app/rewards",
     "miner-app/payouts",
     "miner-app/performance",
-    "miner-app/leaderboard",
-    "miner-app/settings",
-    "miner-app/vote",
     "miner-app/hummingbotstatus",
   ],
-  FAQ: ["faq/liquidity-mining", "faq/accounts&privacy", "faq/eagle-club"],
-  Resources: [
-    "[Hummingbot YouTube](https://www.youtube.com/c/HummingbotChannel)",
-    "[Hummingbot Whitepaper](https://hummingbot.io/hummingbot.pdf)",
-  ],
+  "Account,Security & Privacy": ["faq/accounts&privacy", "miner-app/settings"],
+  Governance: ["miner-app/vote"],
+  FAQs: ["faq/liquidity-mining", "faq/market-making"],
 };
 
 const navConfig = {

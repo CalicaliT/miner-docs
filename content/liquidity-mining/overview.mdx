@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: New to Liquidity Mining?
 description:
 ---
 
@@ -31,14 +31,20 @@ You earn rewards by running a market making bot that maintains orders on exchang
 
 For more information, please read [the whitepaper](https://hummingbot.io/liquidity-mining.pdf).
 
-## How to get started
+## Why is it called Liquidity Mining?
 
-![](img/how-it-works.png)
+Liquidity mining is similar to Bitcoin mining in that miners run open source software on their own computers and use their own scarce resources (inventory of crypto assets).
 
-> **Prerequisites:** Two sets of API Keys are needed, trade-enabled exchange API keys for Hummingbot and read-only API keys for Miner App
+In addition, a collective pool of participants are working together for a common goal, providing liquidity for a specific token and exchange. In return, miners are paid out rewards according to transparent, algorithmically defined rules.
 
-1.To install Hummingbot, see [Hummingbot Quickstart Guide](https://hummingbot.io/academy/quickstart/)
+## How do you measure liquidity?
 
-> **Note:** You can use your own trading bots and strategies to participate in liquidity mining. For the general pool of users who don't have their own trading bots, Hummingbot was created to provide them access to quant/algo strategies and the ability to market make.
+We believe that **slippage** is the optimal metric to quantify liquidity, as opposed to filled order volume, a measure widely used by the market. Slippage refers to the difference between the observed mid-market price and the actual executed price for a trade of a given size. Calculating slippage factors in order book depth and prices at different depths, which better captures the friction and efficiency of actually trading that asset. Deep, liquid order books have low slippage, while thin, illiquid order books have high slippage.
 
-2. To register for Miner App, see [Liquidity Mining Quickstart Guide](https://hummingbot.io/academy/liquidity-mining/): The **official Liquidity Mining app** where you can see real-time rates of return and track your payouts
+**We believe slippage is a more robust indicator of liquidity than trading volume**. As an ex-ante metric, slippage measures information used by traders before they trade to decide whether to execute the trade and in which venue to execute it. In contrast, volume is an ex-post metric and can be easily manipulated.
+
+## How do you verify the liquidity that I provide?
+
+In order to accurately measure liquidity and allocate rewards, miners need to provide a working read-only API key for each exchange where they want to earn rewards. Our data infrastructure uses read-only API keys to collect and aggregate order data for each miner.
+
+In addition, we run proprietary algorithms in order to attempt any prohibited actions such as wash trading and spoofing. While exploitative practices can be difficult to identify given the adversarial nature of the market, we believe that the combination of our focus on compliance, granular data feeds, and machine learning-based algorithms may deter and detect bad actors.
