@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const sidebarCategories = {
-  null: ["index", "liquidity-mining/current-rewards&terms", "faq/eagle-club"],
+  null: ["index", "liquidity-mining/current-rewards&terms", "eagle-club"],
   "About Liquidity Mining": [
     "liquidity-mining/overview",
     "[Hummingbot Whitepaper](https://hummingbot.io/hummingbot.pdf)",
